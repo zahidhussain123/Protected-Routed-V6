@@ -1,0 +1,11 @@
+.cardItems{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card{
+  width: 400px;
+  border: 1px solid black;
+  padding: 5px 10px;
+}
