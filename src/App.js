@@ -4,6 +4,7 @@ import Dashboard from "./pages/Dashboard";
 import PrivateRoute from "./pages/PrivateRoute";
 import Profile from "./pages/Profile";
 import { useEffect, useState } from "react";
+import Admin from "./pages/Admin";
 
 function App() {
   const [auth, setAuth] = useState(null)
@@ -21,6 +22,7 @@ function App() {
     <Route path="/" element={<Dashboard setAuth={setAuth} />} />
     <Route element={<PrivateRoute auth={auth} />}   >
     <Route path="/profile" element={<Profile setAuth={setAuth}   />} />
+     <Route path="/admin" element={<Admin setAuth={setAuth} />} />
     </Route>
     </Routes>
   );

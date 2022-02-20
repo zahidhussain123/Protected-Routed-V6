@@ -36,7 +36,7 @@ const Profile = ({setAuth}) => {
           </a>
         </div>
       </div>
-      <button onClick={()=>setAuth(false)} type="button" className="btn btn-success mx-5  my-2">
+      <button onClick={()=>setAuth(false)} type="button" className="btn btn-danger mx-5  my-2">
         Logout
       </button>
     </div>

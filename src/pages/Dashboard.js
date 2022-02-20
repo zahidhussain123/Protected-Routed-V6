@@ -1,5 +1,4 @@
 import React from "react";
-import {  Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const Dashboard = ({ setAuth }) => {
@@ -7,6 +6,11 @@ const Dashboard = ({ setAuth }) => {
 const handleClick=()=>{
   setAuth(true)
   navigate('/profile')
+}
+
+const handleSub=()=>{
+  setAuth(true)
+  navigate("/admin")
 }
   return (
     <div>
@@ -44,6 +48,13 @@ const handleClick=()=>{
         className="btn btn-secondary my-2 mx-5"
       >
         Login
+      </button>
+      <button
+        onClick={handleSub}
+        type="button"
+        className="btn btn-primary my-2 mx-5"
+      >
+        Register
       </button>
     
     </div>
